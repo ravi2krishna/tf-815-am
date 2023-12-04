@@ -23,3 +23,10 @@ wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/sha
 echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 sudo apt update && sudo apt install terraform
 ```
+
+## Terraform Providers
+
+- Terraform relies on plugins called "providers" to interact with remote systems(aws/azure/etc).
+- Every resource type is implemented by a provider, without providers, Terraform can't manage any kind of infrastructure.
+- AWS - https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+- Azure - https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
