@@ -14,3 +14,12 @@
 - Terraform is an Infrastructure As Code IaC software from HashiCorp.
 - Terraform can build the infrastructure on cloud service providers such as AWS, Microsoft Azure or Google Cloud Platform etc
 - Infrastructure is defined in HCL - Hashicorp Configuration Language
+
+## Setup Terraform 
+
+- https://developer.hashicorp.com/terraform/install
+``` bash
+wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform
+```
