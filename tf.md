@@ -30,3 +30,9 @@ sudo apt update && sudo apt install terraform
 - Every resource type is implemented by a provider, without providers, Terraform can't manage any kind of infrastructure.
 - AWS - https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 - Azure - https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
+- The provider needs to be configured with the proper **credentials** before it can be used.
+
+## AWS - IAM
+
+- AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources.
+- You use IAM to control who is authenticated (signed in) and authorised (has permissions) to use resources.
